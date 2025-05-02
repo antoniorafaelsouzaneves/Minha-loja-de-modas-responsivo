@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fffcfc;
+}
+
+header{
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff4d4d);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 75px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #df3c80, #ff758c, #f39e00);
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    transition: ease 3s;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 90px;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.menu a:hover{
+    text-decoration: underline;
+    
+}
+header a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu a:hover{
+    color: rgb(245, 0, 0);
+    transition: 0.9s ease;
+}
+header h1{
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+    padding-left: 40px;
+}
+
+.menulateral {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff4d4d);
+    border-radius: 20px;
+    top: 76px;
+    right: -300px;
+    padding: 20px;
+    position: absolute;
+    transition: 1s ease;
+}
+#chec{
+    display: none;
+}
+#checlabel{
+    font-size: 28px;
+}
+#chec:checked ~ .menulateral {
+    right: 0;
+}
+.menulateral ul{
+    list-style: none;
+}
+.menulateral a{
+    display: block;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menulateral a:hover{
+    color: rgb(68, 0, 0);
+    transition: 0.9s ease;
+    background-color: rgb(255, 0, 162);
+    border-radius: 20px;
+}
+
+.peçasderoupas{
+    width: 321px;
+    height: 350px;
+    padding: 10px;
+    margin: 20px 20px;  
+    text-align: center;
+    border-radius: 20px;
+    background-color: #E0E0E0;
+}
+.peçasderoupas > img{
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.peçasderoupas h3{
+    text-align: center;
+    margin-top: 15px;
+}
+.peçasderoupas button{
+    margin: 20px; 
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 68, 0);
+    cursor: pointer;
+    color: white;
+}
+
+.secao1{
+    display: flex;
+    overflow-x: auto;
+    gap: 50px;
+    
+}
+.secao2{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+.secao3{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+.sapatos{
+    width: 321px;
+    height: 350px;
+    padding: 10px;
+    margin: 20px 20px;  
+    text-align: center;
+    border-radius: 20px;
+    background-color: #E0E0E0;
+}
+.sapatos > img{
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.sapatos h3{
+    text-align: center;
+    margin-top: 15px;
+}
+.sapatos button{
+    margin: 20px; 
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 68, 0);
+    cursor: pointer;
+    color: white;
+}
+
+.bolsas{
+    width: 321px;
+    height: 350px;
+    padding: 10px;
+    margin: 20px 20px;  
+    text-align: center;
+    border-radius: 20px;
+    background-color: #E0E0E0;
+}
+.bolsas > img{
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.bolsas h3{
+    text-align: center;
+    margin-top: 15px;
+}
+.bolsas button{
+    margin: 20px; 
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 68, 0);
+    cursor: pointer;
+    color: white;
+}
+
+.sobre {
+    text-align: center;
+    background: linear-gradient(135deg, #ff8a00, #e52e71);
+    color: white;
+    padding: 50px 20px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.sobre:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sobre h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sobre p {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: 300;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+
+
+.peçasderoupas button,
+.sapatos button,
+.bolsas button {
+    margin: 20px;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(135deg, #ff4d4d, #ff7eb3);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.peçasderoupas button:hover,
+.sapatos button:hover,
+.bolsas button:hover {
+    background: linear-gradient(135deg, #e52e71, #ff8a00);
+    box-shadow: 0 6px 15px rgba(255, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+
+.peçasderoupas button:active,
+.sapatos button:active,
+.bolsas button:active {
+    transform: scale(0.95);
+}
+
+footer {
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff4d4d);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.redes-sociais {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-sociais a {
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.redes-sociais a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease;
+}
+#back-to-top:hover {
+    background: #ff7eb3;
+}
+
+
+@media(min-width: 1000px){
+    #checlabel{
+        display: none;
+    }
+    .menulateral{
+        display: none;
+    }
+    
+}
+@media(max-width: 1000px){
+    .menu{
+        display: none;
+    }
+    .peçasderoupas{
+        width: 260px;
+        height: 250px;
+    }
+    .peçasderoupas img{
+        width: 150px;
+    }
+    .peçasderoupas button{
+        font-size: 15px;
+    }
+    .secao2{
+        overflow-x: auto;
+        
+    }
+    .sapatos{
+        width: 260px;
+        height: 250px;
+        
+    }
+    .sapatos img{
+        width: 120px;
+    }
+    .sapatos button{
+        font-size: 15px;
+    }
+    #quatro img{
+        height: 120px;
+    }
+    .secao3{
+        overflow-x: auto;
+    }
+    .bolsas{
+        width: 260px;
+        height: 250px;
+    }
+    .bolsas img{
+        height: 120px;
+        width: 150px;
+    }
+    .bolsas button{
+        font-size: 15px;
+    }
+
+    .sobre {
+        padding: 30px 15px;
+        max-width: 90%;
+        font-size: 16px;
+    }
+
+    .sobre h2 {
+        font-size: 26px;
+    }
+
+    .sobre p {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+}
+@media (max-width: 600px) {
+    footer {
+        font-size: 16px;
+        padding: 20px 10px;
+    }
+
+    .redes-sociais a {
+        width: 40px;
+        height: 40px;
+    }
+}
+@media(max-width: 425px){
+    header h1{
+        font-size: 25px;
+    }
+}
